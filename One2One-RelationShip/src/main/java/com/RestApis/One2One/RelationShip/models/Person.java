@@ -9,6 +9,8 @@ public class Person {
     private long id;
     private String name;
 
+    private String email;
+
     @OneToOne
     @JoinColumn(name="address_id", referencedColumnName = "id")
     private Address address;
